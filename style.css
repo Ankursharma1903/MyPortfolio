@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;/*by me*/
+}
+.sidebar{
+    /* background-color: red; */
+    /* background-color: rgb(156, 156, 156); */
+    background-color: rgb(184 184 184);
+    /* width: 434px; */
+    font-family: 'EB Garamond', serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;/*to help in responsiveness and detach from the main content as it pushes the main content*/
+    
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0px;
+    
+    
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color: black;
+    
+    
+}
+.sidebar nav li a:hover{
+    color: rgb(226, 19, 19);/*by me added*/
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    padding: 23px;/*by me for responsive and design*/
+}
+.container{
+    display: flex;
+
+}
+.infocontainer{
+    /* background-color: rgb(204 145 253 / 43%); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap;by me for responsive  bu given problem in pictures*/
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Yellowtail', cursive;
+    font-size: 20px;/*for responsive */
+}
+.hello{
+    /* font-size: 65px; */
+    font-size: 3em;/*for responsive*/
+}
+.name{
+    /* font-size: 50px; */
+    font-size: 3em;/*for responsive*/
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+}
+.about{
+    /* font-size: 40px; */
+    font-size: 2.5em;/*where less than 50 px i used below 3em to make it responsive*/
+
+    
+}
+.moreabout{
+    /* font-size: 25px; */
+    font-size: 2em;/*for responsive*/
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;/*by me added*/
+    margin-top: 23px;
+    
+}
+.buttons{
+    /* margin-top: 34px; */
+    margin-top: 2.2em;/*for responsive*/
+    font-size: 16px;/*for responsive*/
+}
+.btn{
+    padding: 9px 14px;
+    border: 2px solid black;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(180, 105, 241);
+    font-weight: bold;
+    /* font-size: 21px; */
+    font-size: 2em;/*for responsive*/
+    margin:3px 3px ;
+    cursor: pointer;
+}
+.btn-sm{
+    /* font-size: 14px; */
+    font-size: 10px;
+    /* padding: 10px 19px; */
+    padding: 7px 13px;
+    /* margin: 12px 0px; */
+    margin: 10px 0px;
+
+}
+.btn:hover{
+   color: rgb(8, 168, 168);
+   background-color: white;
+}
+.devpic img{
+    /* width: 381px; */
+    height: 58vh;
+}
+
+
+/* STYLING CONTACT PAGE */
+
+.contactform{
+    padding: 0px 34px;
+    /* padding-top: 144px; */
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    font-size: 20px;/*by me*/
+    margin: 88px;
+}
+.contactform h1{
+    /* padding: 12px 0; */
+     font-size: 54px;/*by me*/
+   
+}
+.contactform form div{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contactform form div input{
+   width: 26vw;/*removed for make more responsive*/
+   border-radius: 5px;
+   margin: 6px 0 0 0;/*except top all will become 0*/
+   padding: 3px;
+
+}
+.contactform form {
+ margin: 0 40px;
+
+}
+#emailHelp{
+    font-size: 15px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 8px 0;
+
+}
+
+/* BLOG SECTION  */
+.blogcontainer{
+    margin: 88px;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'EB Garamond', serif;
+}
+ /* .blogcontainer h1{
+    font-family: 'EB Garamond', serif;
+    margin: 23px;
+}
+.blogitem p{
+    font-family: 'EB Garamond', serif;
+    font-size: 23px;
+    /*by me*/  
+/* }  */ 
+
+ h1{
+    font-family: 'EB Garamond', serif;
+    margin: 23px;
+}
+ p{
+    font-family: 'EB Garamond', serif;
+    font-size: 23px;/*by me*/  
+}
+
+/* intro page */
+
+.intro{
+    margin: 88px;
+}
+.intro h2{
+    font-family: 'EB Garamond', serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'EB Garamond', serif;
+    margin: 12px;/*by me*/
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+    margin: 12px;/*by me*/
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+.seventyfive{
+    width: 200px;
+    background-color: chartreuse;
+}
+.fifty{
+    width: 125px;
+    background-color: cyan;
+}
+.twentyfive{
+    width: 75px;
+    background-color: yellow;
+}
+
+
+/* FOR NAVIGATION CONSOLE SIGNS */
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 135px;
+    margin-top: 10px;
+}
+
+
+
+/* FOR RESPONSIVE WEBSITE */
+
+@media (max-width:1200px) {
+    /* *{ 
+        /* background-color: rgb(255, 153, 0); */
+    /* } */ 
+    /* .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    } */
+    .devinfo{
+        font-size: 12px;
+    }
+    .devpic{
+        display: none;
+    }
+    .intro , .blogcontainer ,.contactform{
+        margin:50px 8px;
+    }
+    .buttons{
+        font-size: 7px;
+    }
+}
